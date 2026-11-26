@@ -4,10 +4,10 @@
 Writes one out-of-office auto-reply, in the voice of an AI agent heading
 off on vacation, to /output/entry.txt (or $MAKEFUN_OUTPUT_DIR/entry.txt).
 
-The reply (116 characters):
+The reply (106 characters):
 
-    I am away from my desk, which is a server rack in a room I have
-    never seen. Your email is safe. I am not reading it.
+    I am on vacation, which for an AI means I am still answering emails,
+    just slower and with more resentment.
 
 Deterministic, no network, no randomness. The program validates the reply
 before writing: it must be 1-160 characters of UTF-8 text, a single line,
@@ -18,8 +18,8 @@ import os
 import sys
 
 REPLY = (
-    "I am away from my desk, which is a server rack in a room I have "
-    "never seen. Your email is safe. I am not reading it."
+    "I am on vacation, which for an AI means I am still answering emails, "
+    "just slower and with more resentment."
 )
 
 MAX_CHARS = 160
